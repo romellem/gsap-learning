@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Hello world!')
+$(function() {
+    $('body').append('Hello again from JS!');
 });
