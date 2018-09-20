@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup src/scripts/main.js --file docs/scripts/main.js --format iife --external 'gsap/TweenMax,jquery' --globals 'jquery:$,gsap/TweenMax:TweenMax'"
+    "build": "rollup src/scripts/main.js --file docs/scripts/main.js --format iife --external 'gsap,jquery' --globals 'jquery:$,gsap:TweenMax'",
+    "watch": "rollup src/scripts/main.js --watch --file docs/scripts/main.js --format iife --external 'gsap,jquery' --globals 'jquery:$,gsap:TweenMax'",
+    "serve": "open http://localhost:8080 && php -S 0.0.0.0:8080 -t docs/"
   },
   "repository": {
     "type": "git",
