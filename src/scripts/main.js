@@ -1,6 +1,9 @@
 import $ from 'jquery';
-import { TweenMax } from 'gsap/TweenMax';
+import TweenMax from 'gsap';
 
 $(function() {
-    $('body').append('Hello again from JS!');
+    let box = $('#box');
+
+    TweenMax.to(box, 2, { x: 50 });
+    console.log('hello world!')
 });
