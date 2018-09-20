@@ -1,0 +1,21 @@
+{
+  "name": "gsap-learning",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup src/scripts/main.js --file docs/scripts/main.js --format iife --external 'gsap/TweenMax,jquery' --globals 'jquery:$,gsap/TweenMax:TweenMax'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romellem/gsap-learning.git"
+  },
+  "author": "romellem <romellem.git@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://romellem.github.io/gsap-learning/",
+  "dependencies": {
+    "gsap": "^2.0.2",
+    "jquery": "^3.3.1",
+    "rollup": "^0.66.1"
+  }
+}
