@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "new": "echo 'Enter name of new HTML file (\\033[33mwithout .html\\033[0m)' && read filename && cp ./docs/template.html \"./docs/$filename.html\" && sed -i'.backup' \"s/__TEMPLATE_NAME__/$filename/g\" \"./docs/$filename.html\" && rm \"./docs/$filename.html.backup\" && echo \"Created \\033[32m./docs/$filename.html\\033[0m\"",
+    "new": "echo 'Enter name of new HTML file (\\033[33mwithout .html\\033[0m)' && read filename && cp ./docs/template.html \"./docs/$filename.html\" && cp ./src/scripts/template.js \"./src/scripts/$filename.js\" && sed -i'.backup' \"s/__TEMPLATE_NAME__/$filename/g\" \"./docs/$filename.html\" && rm \"./docs/$filename.html.backup\" && echo \"Created \\033[32m./docs/$filename.html\\033[0m\"",
     "build": "rollup --config rollup.config.js",
     "watch": "rollup --watch --config rollup.config.js",
     "serve": "open http://localhost:8080 && php -S 0.0.0.0:8080 -t docs/"
